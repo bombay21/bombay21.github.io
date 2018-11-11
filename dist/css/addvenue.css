@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #0080ff;
+    --base-font-color: #A8A9AC;
+    --menu-bg: rgba(9, 8, 25, 1); 
+    --menu-bg-lighter: rgba(35, 31, 32, 0.4); 
+    --box-shadow-color: rgba(0,0,0,.2); 
+    --section-heading-color: #59595B;
+    --bg-light: rgba( 168, 169, 172, 0.05 );
+    --button-hover-bg: rgb(2, 95, 189);
+    --footer-bg: #162a47;
+    --footer-bg-dark: #010a13;
+    --base-font-size: 14px;
+  }
+
+.tab-group li {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center; 
+  }
+  label {
+    position: relative;
+    -webkit-transform: initial;
+            transform: initial;
+    left: initial;
+    color: var(--base-font-color);
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: initial;
+    pointer-events: initial;
+    font-size: var(--base-font-size);
+  }
+  label .req {
+    margin: initial;
+    color: initial;
+  }
+  
+  label.active {
+    -webkit-transform: initial;
+            transform: initial;
+    left: initial;
+    font-size: initial;
+  }
+  label.active .req {
+    opacity: initial;
+  }
+  
+  label.highlight {
+    color: initial;
+  }
+  .status-label{
+    /* font-size: 16px; */
+  }
+  .status{
+    display: flex;
+    align-items: center;
+  }
+  .status input{
+    width: initial;
+    height: initial;
+    margin-right: 20px;
+  }
+  select{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--menu-bg);
+    color: var(--base-font-color);
+  }
+  .upload-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #file{
+    cursor: pointer;
+    border: 0;
+    width: initial !important;
+  }
+  /* label{font-size: 16px} */
+  .button {
+    /* text-transform: initial; */
+  }
+  .added{
+    color: rgb(0, 128, 255);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .d-none{
+    display: none;
+  }
+  .d-block{
+    display: block;
+  }

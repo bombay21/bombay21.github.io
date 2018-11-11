@@ -1,0 +1,54 @@
+#showcase{
+    background: url('../images/groove-venue-hero.jpg') no-repeat center/cover;
+    height: 25vh;
+}
+.status{
+    color: rgb(6, 160, 31);
+    font-weight: 500;
+    font-size: 9px;
+}
+.nota{color: rgb(211, 7, 7)}
+.detail h2{color: rgb(83, 83, 85);}
+.detail p{display: flex; justify-content: space-between; align-items: flex-end}
+.pagination button{
+    color: #59595B; 
+    padding: 5px 14px;
+    margin: 0 10px;
+}
+.pagination #page-number{
+    /* border-top: 1px solid #A8A9AC; */
+}
+.intercom{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(243, 152, 11);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.06), 0 2px 32px 0 rgba(0,0,0,.16);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100000 !important;
+}
+.intercom svg{
+    width: 28px;
+    height: 32px;
+}
+.intercom svg path{
+    fill: rgb(255, 255, 255);
+}
+footer{
+    margin-top: 30px;
+}
+@media screen and (max-width: 767px){
+    a.post-venue{line-height: 60.3px}
+    .pagination button{padding: 5px 8px; margin: 0;}
+    .pagination #pages{font-size: 11px;}
+}
+@media screen and (min-width: 768px){
+    .pt-xl {
+        padding-top: 2.5rem;
+    }
+}

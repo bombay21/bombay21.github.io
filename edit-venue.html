@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Venue</title>
+    <link rel="stylesheet" href="dist/fontawesome/css/fontawesome-45.min.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="dist/css/animate.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/signup.css">
+    <link rel="stylesheet" href="dist/css/addvenue.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION & SHOWCASE -->
+    <header>
+        <nav class="p-none-sm">
+            <div class="flexed container">
+                <a class="brand" href="index.html">
+                    <img src="dist/images/svg/branded.svg" width="150" alt="">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="form animated fadeIn">
+
+        <ul class="tab-group">
+            <li class="tab active">Edit Venue</li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="signup">
+                <form class="formVenue">
+
+                    <div class="field-wrap">
+                        <input type="text" name="name" autocomplete="off" placeholder="Enter name of venue" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <select name="category" id="">
+                            <option value="" selected disabled>Select Category</option>
+                            <option>Conference & Business Centres</option>
+                            <option>Arenas & Stadiums</option>
+                            <option>Camps & Retreat Centres</option>
+                            <option>Relaxation & Groove</option>
+                            <option>Cultural & Historical Centres</option>
+                            <option>Cruise Ships</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+
+                    <div class="field-wrap">
+                        <input type="text" name="location" autocomplete="off" placeholder="Enter address of venue" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <select name="state" id="">
+                            <option>Select State</option>
+                            <option>Lagos</option>
+                            <option>Enugu</option>
+                            <option>Abuja</option>
+                            <option>Rivers</option>
+                            <option>Akwa-Ibom</option>
+                            <option>Benue</option>
+                            <option>Sokoto</option>
+                            <option>Niger</option>
+                            <option>Borno</option>
+                            <option>Nasarawa</option>
+                        </select>
+                    </div>
+
+                    <div class="field-wrap upload-group">
+                        <label for="file"><i class="far fa-image"></i></label>
+                        <input type="file" name="" id="file-upload" style="display:none">
+                        <input type="text" name="" id="file" placeholder="Upload Image" onfocus="this.blur()">
+                    </div>
+
+                    <p class="status-label mb-none">Status:</p>
+                    <div class="field-wrap status">
+                        <label for="on">Available</label>
+                        <input id="on" value="1" name="status" type="radio" checked />
+                        <label for="off">Not Available</label>
+                        <input id="off" value="0" name="status" type="radio" />
+                    </div>
+
+                    <a id="editVenueBtn" class="button button-block">Update Venue</a>
+
+                </form>
+
+            </div>
+
+        </div><!-- /.tab-content -->
+    </div> <!-- /.form -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-firestore.js"></script> -->
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/db.js"></script>
+    <script src="dist/js/formVenue.js"></script>
+</body>
+
+</html>

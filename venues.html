@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/fontawesome/css/fontawesome-45.min.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="dist/css/normalize.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/venue.css">
+    <title>Venues</title>
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION & SHOWCASE -->
+    <header>
+        <nav class="p-none-sm">
+            <div class="flexed container">
+                <a class="brand" href="index.html">
+                    <img src="dist/images/svg/branded.svg" width="150" alt="">
+                </a>
+                <ul>
+                    <li><a href="add-venue.html" class="post-venue"><span class="fa fa-plus"></span> Add Venue</a></li>
+                </ul>
+                <a id="drawer"><span class="fa fa-bars"></span></a>
+            </div>
+        </nav>
+        <div id="showcase" class="m-none p-none">
+            <div class="section-main align-center">
+                <h1 class="m-none">Your next venue could be here</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH FORM -->
+    <div id="search-form" class="form-container">
+        <form action="" class="p-sm">
+            <div class="input-control bordered-sm">
+                <i class="fas fa-pencil-alt"></i>
+                <input id="search-field" type="text" placeholder="Enter name of venue" />
+            </div>
+            <div class="input-control bordered bordered-sm">
+                <i class="fas fa-map-marker-alt"></i>
+                <select name="" id="state-field">
+                    <option>Select State</option>
+                    <option value="1">Lagos</option>
+                    <option value="2">Enugu</option>
+                    <option value="3">Abuja</option>
+                    <option value="4">Rivers</option>
+                    <option value="5">Akwa-Ibom</option>
+                    <option value="6">Benue</option>
+                    <option value="7">Sokoto</option>
+                    <option value="8">Niger</option>
+                    <option value="9">Borno</option>
+                    <option value="10">Nasarawa</option>
+                </select>
+            </div>
+            <div class="input-control bordered-sm">
+                <i class="fas fa-list-alt"></i>
+                <select name="" id="category-field">
+                    <option value="">All Category</option>
+                    <option value="">Conference & Business Centres</option>
+                    <option value="">Arenas & Stadiums</option>
+                    <option value="">Camps & Retreat Centres</option>
+                    <option value="">Relaxation & Groove</option>
+                    <option value="">Cultural & Historical Centres</option>
+                    <option value="">Cruise Ships</option>
+                </select>
+            </div>
+            <div class="input-button">
+                <button id="search-button"><span class="text">Find Venue</span> <span class="fas fa-search"></span></button>
+            </div>
+        </form>
+    </div>
+
+    <!-- LIST OF VENUES -->
+    <section id="featured" class="container container-slim pt-xl align-center">
+        <h2>Venues</h2>
+        <p class="lead">List of all venues</p>
+        <div id="ourvenues" class="steps featured pt-lg">
+        </div>
+        <div class="pagination pt-lg">
+            <button id="prev"><i class="fas fa-chevron-left"></i></button>
+            <span id="page-number">Page 1</span>
+            <button id="next"><i class="fas fa-chevron-right"></i></button>
+            <hr>
+            <p id="pages">Showing 1 to 30 of 60000 venues</p>
+        </div>
+    </section>
+    <div class="intercom">
+        <svg viewBox="0 0 28 32"><path d="M28,32 C28,32 23.2863266,30.1450667 19.4727818,28.6592 L3.43749107,28.6592 C1.53921989,28.6592 0,27.0272 0,25.0144 L0,3.6448 C0,1.632 1.53921989,0 3.43749107,0 L24.5615088,0 C26.45978,0 27.9989999,1.632 27.9989999,3.6448 L27.9989999,22.0490667 L28,22.0490667 L28,32 Z M23.8614088,20.0181333 C23.5309223,19.6105242 22.9540812,19.5633836 22.5692242,19.9125333 C22.5392199,19.9392 19.5537934,22.5941333 13.9989999,22.5941333 C8.51321617,22.5941333 5.48178311,19.9584 5.4277754,19.9104 C5.04295119,19.5629428 4.46760991,19.6105095 4.13759108,20.0170667 C3.97913051,20.2124916 3.9004494,20.4673395 3.91904357,20.7249415 C3.93763774,20.9825435 4.05196575,21.2215447 4.23660523,21.3888 C4.37862552,21.5168 7.77411059,24.5386667 13.9989999,24.5386667 C20.2248893,24.5386667 23.6203743,21.5168 23.7623946,21.3888 C23.9467342,21.2215726 24.0608642,20.9827905 24.0794539,20.7254507 C24.0980436,20.4681109 24.0195551,20.2135019 23.8614088,20.0181333 Z"></path></svg>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-cols">
+                <ul>
+                    <li>About OurVenue</li>
+                    <li>Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <address>South Ipsum, Dolor 12A Amet, Consectetuer Adipiscing </address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span class="fa fa-envelope"></span>
+                            <address>kenechukwu.john@gmail.com </address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span class="fa fa-phone"></span>
+                            <address>+234 703 453 8485 </address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/">
+                                <div class="social-icon-group"><i class="fab fa-facebook-f"></i></div>
+                            </a>
+                            <a href="https://twitter.com/">
+                                <div class="social-icon-group"><span class="fab fa-twitter"></span></div>
+                            </a>
+                            <a href="https://instagram.com/">
+                                <div class="social-icon-group"><span class="fab fa-instagram"></span></div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Navigation</li>
+                    <li><a href="#">Browse Venue</a></li>
+                    <li><a href="#">Browse Categories</a></li>
+                    <li><a href="#">Bookmarks</a></li>
+                    <li><a href="#">Venue Request</a></li>
+                    <li><a href="#">Contact Agent</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+                <ul>
+                    <li>Venues</li>
+                    <li><a href="#">Post new Venue</a></li>
+                    <li><a href="#">Recent Venues</a></li>
+                    <li><a href="#">Venues Listing</a></li>
+                    <li><a href="#">Book a Venue</a></li>
+                    <li><a href="#">All Categories</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-base">
+            &copy; 2018 OurVenue. Handcrafted by Bombay
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script src="dist/js/db.js"></script>
+</body>
+
+</html>

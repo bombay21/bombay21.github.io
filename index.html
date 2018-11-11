@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="dist/fontawesome/css/fontawesome-45.min.css">
+    <link rel="stylesheet" href="dist/css/normalize.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>OurVenue - Is right here</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION & SHOWCASE -->
+    <header>
+        <nav class="p-none-sm">
+            <div class="flexed container">
+                <a class="brand" href="index.html">
+                    <img src="dist/images/svg/branded.svg" width="150" alt="">
+                </a>
+                <ul>
+                    <li class="active"><a class="menu-elements" href="#">Overview</a></li>
+                    <li><a class="menu-elements" href="#featured">Featured</a></li>
+                    <li><a class="menu-elements" href="#categories">Categories</a></li>
+                    <li><a class="venue" href="venues.html">Venues</a></li>
+                    <li><a href="create-account.html" class="post-venue"><span class="fa fa-plus"></span> Create
+                            Account</a></li>
+                </ul>
+                <a id="drawer"><span class="fa fa-bars"></span></a>
+            </div>
+        </nav>
+        <div id="showcase" class="m-none p-none">
+            <div class="section-main align-center">
+                <h1 class="m-none">Find your next venue</h1>
+                <p class="mt-none">Search through a variety of venues across Nigeria</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH FORM -->
+    <section id="search-form" class="form-container">
+        <form action="" class="p-sm">
+            <div class="input-control bordered-sm">
+                <i class="fas fa-pencil-alt"></i>
+                <input id="search-field" type="text" placeholder="Enter name of venue" />
+            </div>
+            <div class="input-control bordered bordered-sm">
+                <i class="fas fa-map-marker-alt"></i>
+                <select name="" id="">
+                    <option>Select State</option>
+                    <option value="1">Lagos</option>
+                    <option value="2">Enugu</option>
+                    <option value="3">Abuja</option>
+                    <option value="4">Rivers</option>
+                    <option value="5">Akwa-Ibom</option>
+                    <option value="6">Benue</option>
+                    <option value="7">Sokoto</option>
+                    <option value="8">Niger</option>
+                    <option value="9">Borno</option>
+                    <option value="10">Nasarawa</option>
+                </select>
+            </div>
+            <div class="input-control bordered-sm">
+                <i class="fas fa-list-alt"></i>
+                <select name="category" id="">
+                    <option value="">All Category</option>
+                    <option value="">Conference & Business Centres</option>
+                    <option value="">Arenas & Stadiums</option>
+                    <option value="">Camps & Retreat Centres</option>
+                    <option value="">Relaxation & Groove</option>
+                    <option value="">Cultural & Historical Centres</option>
+                    <option value="">Cruise Ships</option>
+                </select>
+            </div>
+            <div class="input-button">
+                <button><span class="text">Find Venue</span> <span class="fas fa-search"></span> </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="container container-slim pt-lg align-center">
+        <h2>How it Works</h2>
+        <p class="lead">Secure your next venue in three easy steps</p>
+        <div class="steps account pt-lg">
+            <div class="step create">
+                <figure>
+                    <img src="dist/images/svg/user.svg" alt="">
+                </figure>
+                <figcaption>
+                    <h4>Create an Account</h4>
+                </figcaption>
+                <p>Consectetuer adipi Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, consectetuer adipi</p>
+            </div>
+            <div class="step search">
+                <figure>
+                    <img src="dist/images/svg/seo.svg" alt="">
+                </figure>
+                <figcaption>
+                    <h4>Search for a Venue</h4>
+                </figcaption>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipi consectetuer adipi Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="step book">
+                <figure>
+                    <img src="dist/images/svg/online-booking.svg" alt="">
+                </figure>
+                <figcaption>
+                    <h4>Book Venue</h4>
+                </figcaption>
+                <p>Adipi Lorem ipsum dolor sit amet, consectetuer lorem ipsum dolor sit amet, consectetuer adipi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED VENUES -->
+    <section id="featured" class="container container-slim pt-xl align-center">
+        <h2>Featured Venues</h2>
+        <p class="lead">See our top pick of venues used by most clients</p>
+        <div class="steps featured pt-lg">
+            <div class="feature">
+                <div id="" class="item-option close"><i class="fas fa-edit"></i></div>
+                <div id="" class="item-option close"><i class="fas fa-times"></i></div>
+                <a href="#">
+                    <figure>
+                        <img src="dist/images/groove-venue.jpg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 id="venue-name" class="mt-none align-left">Zone Tech Park</h2>
+                        <p id="venue-address" class="mt-none align-left">Gbagada, Lagos</p>
+                    </div>
+                </a>
+                <p class="badge">NEW</p>
+            </div>
+            <div class="feature">
+                <div id="" class="item-option close"><i class="fas fa-edit"></i></div>
+                <div id="" class="item-option close"><i class="fas fa-times"></i></div>
+                <a href="#">
+                    <figure>
+                        <img src="dist/images/beach-venue-sm.jpg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none align-left">Eagle Square</h2>
+                        <p class="mt-none align-left">Central Area, Abuja</p>
+                    </div>
+                </a>
+            </div>
+            <div class="feature">
+                <div id="" class="item-option close"><i class="fas fa-edit"></i></div>
+                <div id="" class="item-option close"><i class="fas fa-times"></i></div>
+                <a href="#">
+                    <figure>
+                        <img src="dist/images/outdoor-venue.jpg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none align-left">Shell Hall</h2>
+                        <p class="mt-none align-left">Port-Harcourt, Rivers</p>
+                    </div>
+                </a>
+                <p class="badge">NEW</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR CATEGORIES -->
+    <section id="categories" class="categories mt-xl align-center">
+        <div class="container container-slim">
+            <h2>Popular Categories</h2>
+            <p class="lead">A list of categories that will help you choose your next venue</p>
+            <div class="steps pt-lg">
+                <div class="category">
+                    <figure>
+                        <img src="dist/images/svg/conference.svg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none">Conference & Business Centres</h2>
+                        <a class="mt-lg" href="#">550 Available Venues</a>
+                    </div>
+                </div>
+                <div class="category">
+                    <figure>
+                        <img src="dist/images/svg/pula-arena.svg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none">Arenas & Stadiums</h2>
+                        <a class="mt-lg" href="#">33 Available Venues</a>
+                    </div>
+                </div>
+                <div class="category">
+                    <figure>
+                        <img src="dist/images/svg/tent.svg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none">Camps & Retreat Centres</h2>
+                        <a class="mt-lg" href="#">70 Available Venues</a>
+                    </div>
+                </div>
+                <div class="category">
+                    <figure>
+                        <img src="dist/images/svg/guitar.svg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none">Relaxation & Groove</h2>
+                        <a class="mt-lg" href="#">876 Available Venues</a>
+                    </div>
+                </div>
+                <div class="category">
+                    <figure>
+                        <img src="dist/images/svg/museum.svg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none">Cultural & Historical Centres</h2>
+                        <a class="mt-lg" href="#">45 Available Venues</a>
+                    </div>
+                </div>
+                <div class="category">
+                    <figure>
+                        <img src="dist/images/svg/boat.svg" alt="">
+                    </figure>
+                    <div class="detail">
+                        <h2 class="mt-none">Cruise Ships</h2>
+                        <a class="mt-lg" href="#">21 Available Venues</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APP DOWNLOAD -->
+    <section class="container container-slim">
+        <div class="download">
+            <div class="mocks">
+                <img src="dist/images/mock_1.jpg" alt="">
+            </div>
+            <div class="instruct">
+                <h2>Download <span>OurVenue</span> App Now</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+                <div class="app">
+                    <a href="#"><img src="dist/images/svg/playstore.svg" alt="">Play Store</a>
+                    <a href="#"><img src="dist/images/svg/apple.svg" alt=""><span>App Store</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="subscribe">
+        <div class="sub-form container container-slim">
+            <form action="">
+                <div class="form-email">
+                    <span class="fas fa-envelope"></span>
+                    <input type="text" placeholder="Enter your email address" />
+                </div>
+                <div class="form-submit">
+                    <button type="button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- MAP -->
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.4829524009892!2d3.298158114295396!3d6.586731195236481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b91ca93003309%3A0xa50fda5a6eaf21ee!2sPacific+Comprehensive+College!5e0!3m2!1sen!2sng!4v1538388065576"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="margin-top:-6px">
+        <div class="container">
+            <div class="footer-cols">
+                <ul>
+                    <li>About OurVenue</li>
+                    <li>Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt ut laoreet
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <address>South Ipsum, Dolor 12A Amet, Consectetuer Adipiscing </address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span class="fa fa-envelope"></span>
+                            <address>kenechukwu.john@gmail.com </address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="address">
+                            <span class="fa fa-phone"></span>
+                            <address>+234 703 453 8485 </address>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="social-icons">
+                            <a href="#">
+                                <div class="social-icon-group"><i class="fab fa-facebook-f"></i></div>
+                            </a>
+                            <a href="#">
+                                <div class="social-icon-group"><span class="fab fa-twitter"></span></div>
+                            </a>
+                            <a href="#">
+                                <div class="social-icon-group"><span class="fab fa-instagram"></span></div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Navigation</li>
+                    <li><a href="#">Browse Venue</a></li>
+                    <li><a href="#">Browse Categories</a></li>
+                    <li><a href="#">Bookmarks</a></li>
+                    <li><a href="#">Venue Request</a></li>
+                    <li><a href="#">Contact Agent</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+                <ul>
+                    <li>Venues</li>
+                    <li><a href="#">Post new Venue</a></li>
+                    <li><a href="#">Recent Venues</a></li>
+                    <li><a href="#">Venues Listing</a></li>
+                    <li><a href="#">Book a Venue</a></li>
+                    <li><a href="#">All Categories</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-base">
+            &copy; 2018 OurVenue. Handcrafted by Bombay
+        </div>
+    </footer>
+
+
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>
